@@ -27,6 +27,7 @@ public class MyArcadeGame extends ApplicationAdapter {
 		music.setLooping(true);
 
 		music.play();
+		soundEffect.play();
 	}
 
 	@Override
@@ -35,8 +36,6 @@ public class MyArcadeGame extends ApplicationAdapter {
 
 		duration += Gdx.graphics.getDeltaTime();
 		TextureRegion anim = animation.getKeyFrame(duration, true);
-
-		soundEffect.play();
 
 		batch.begin();
 
